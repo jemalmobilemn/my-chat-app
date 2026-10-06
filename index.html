@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bon Chat</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOGIN / REGISTER -->
+  <section id="authPage" class="auth-page">
+
+    <div class="auth-box">
+
+      <h1>💬 Bon Chat</h1>
+
+      <p id="authTitle">Create your account</p>
+
+      <input
+        id="username"
+        type="text"
+        placeholder="Username"
+      >
+
+      <input
+        id="email"
+        type="email"
+        placeholder="Email"
+      >
+
+      <input
+        id="password"
+        type="password"
+        placeholder="Password"
+      >
+
+      <button id="authBtn">Create Account</button>
+
+      <button id="switchAuth" class="secondary">
+        Already have an account? Login
+      </button>
+
+      <p id="authError"></p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CHAT APP -->
+  <section id="chatPage" class="chat-page hidden">
+
+    <header class="header">
+
+      <div>
+        <h2>💬 Bon Chat</h2>
+        <span id="currentUser"></span>
+      </div>
+
+      <button id="logoutBtn">
+        Logout
+      </button>
+
+    </header>
+
+
+    <div class="chat-layout">
+
+      <!-- USERS -->
+      <aside class="users">
+
+        <h3>Users</h3>
+
+        <input
+          id="searchUser"
+          type="text"
+          placeholder="Search username..."
+        >
+
+        <div id="usersList"></div>
+
+      </aside>
+
+
+      <!-- CHAT -->
+      <main class="chat">
+
+        <div class="chat-header">
+
+          <strong id="chatUser">
+            Select a user
+          </strong>
+
+        </div>
+
+        <div id="messages" class="messages"></div>
+
+
+        <form id="messageForm" class="message-form">
+
+          <input
+            id="messageInput"
+            type="text"
+            placeholder="Write a message..."
+            autocomplete="off"
+          >
+
+          <button type="submit">
+            ➤
+          </button>
+
+        </form>
+
+      </main>
+
+    </div>
+
+  </section>
+
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
