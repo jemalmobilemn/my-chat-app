@@ -1,0 +1,9 @@
+const firebaseConfig = {
+  apiKey: "AIza....",
+  authDomain: "...",
+  databaseURL: "...",
+  projectId: "...",
+  storageBucket: "...",
+  messagingSenderId: "...",
+  appId: "1:...."
+};
