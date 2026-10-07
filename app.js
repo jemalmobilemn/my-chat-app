@@ -22,6 +22,19 @@ import {
   onValue,
   update,
   remove
+  import { initializeApp } from
+  "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut
+} from
+  "https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js";
+
+alert("BON CHAT APP.JS IS WORKING!");
 } from
   "https://www.gstatic.com/firebasejs/12.3.0/firebase-database.js";
 
