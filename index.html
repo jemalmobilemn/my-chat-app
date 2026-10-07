@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Bon Chat</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- HEADER -->
+
+  <header class="header">
+
+    <div class="logo">
+      💬 Bon Chat
+    </div>
+
+    <div id="userStatus">
+      Not signed in
+    </div>
+
+  </header>
+
+
+  <!-- LOGIN / SIGN UP -->
+
+  <section
+    id="authSection"
+    class="card"
+  >
+
+    <h2>
+      Welcome to Bon Chat
+    </h2>
+
+
+    <input
+      id="email"
+      type="email"
+      placeholder="Email"
+      autocomplete="email"
+    >
+
+
+    <input
+      id="password"
+      type="password"
+      placeholder="Password"
+      autocomplete="current-password"
+    >
+
+
+    <input
+      id="username"
+      type="text"
+      placeholder="Username"
+    >
+
+
+    <div class="buttons">
+
+      <button id="signupBtn">
+        Create Account
+      </button>
+
+      <button id="loginBtn">
+        Login
+      </button>
+
+    </div>
+
+
+    <p id="authMessage"></p>
+
+  </section>
+
+
+  <!-- MAIN APP -->
+
+  <main
+    id="appSection"
+    style="display:none;"
+  >
+
+
+    <!-- FIND PEOPLE -->
+
+    <section
+      id="findPeople"
+      class="card"
+    >
+
+      <h2>
+        👥 Find People
+      </h2>
+
+
+      <input
+        id="searchUser"
+        type="text"
+        placeholder="Search by name or username..."
+      >
+
+
+      <div id="userResults"></div>
+
+    </section>
+
+
+    <!-- CHAT -->
+
+    <section
+      id="chatBox"
+      class="card"
+      style="display:none;"
+    >
+
+
+      <button id="backToUsers">
+        ← Back
+      </button>
+
+
+      <h2 id="chatTitle">
+        Chat
+      </h2>
+
+
+      <div id="messages"></div>
+
+
+      <div class="messageInput">
+
+        <input
+          id="messageText"
+          type="text"
+          placeholder="Write a message..."
+        >
+
+
+        <button id="sendMessage">
+          Send
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- LOGOUT -->
+
+    <button
+      id="logoutBtn"
+      class="logout"
+    >
+      Logout
+    </button>
+
+
+  </main>
+
+
+  <!-- DEBUG TEST -->
+
+  <script>
+    console.log("Bon Chat HTML loaded");
+  </script>
+
+
+  <!-- FIREBASE / APP JAVASCRIPT -->
+
+  <script
+    type="module"
+    src="app.js"
+  ></script>
+
+
+</body>
+
+</html>
