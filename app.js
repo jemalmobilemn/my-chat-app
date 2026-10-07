@@ -1,3 +1,4 @@
+alert("BON CHAT JAVASCRIPT IS WORKING!");
 * {
   box-sizing: border-box;
 }
