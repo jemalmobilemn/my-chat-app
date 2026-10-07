@@ -1,7 +1,4 @@
-alert("BON CHAT JAVASCRIPT IS WORKING!");
 
-import { initializeApp } from
-  "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
 * {
   box-sizing: border-box;
 }
