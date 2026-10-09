@@ -1,0 +1,36 @@
+/* Bon Chat - Soft Sky Blue Background */
+
+body {
+background-color: #EAF6FF;
+color: #243447;
+font-family: Arial, sans-serif;
+}
+
+/* Cards */
+.card {
+background-color: #FFFFFF;
+border-radius: 14px;
+box-shadow: 0 3px 12px rgba(50, 100, 150, 0.10);
+}
+
+/* Header */
+.header {
+background-color: #D9EEFF;
+color: #234B70;
+padding: 15px;
+border-radius: 12px;
+}
+
+/* Buttons */
+button {
+background-color: #55A9E8;
+color: white;
+border: none;
+border-radius: 8px;
+padding: 10px 16px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #388FD0;
+}
